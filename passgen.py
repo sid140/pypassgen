@@ -20,9 +20,12 @@ def passw(encode):
         computer_request = input("Do you need extra  chars to be add(Y/N):? ")
         if computer_request == "Y":
             print(str(random.choice(password_str) + str(double_encrypt)))
-        input()
-    elif computer_request == "N":
+
+        elif computer_request == "N":
+            print(str(double_encrypt))
+            input("Click to exit")
+    else:
         print("Exiting")
+        input("Click to exit")
 
 passw(f"encode")
-input()
