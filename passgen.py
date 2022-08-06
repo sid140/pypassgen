@@ -25,3 +25,4 @@ def passw(encode):
         print("Exiting")
 
 passw(f"encode")
+input()
